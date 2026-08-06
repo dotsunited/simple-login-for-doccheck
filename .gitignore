@@ -1,0 +1,24 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Composer lock file is not committed: this is a plugin, not an application.
+/composer.lock
+
+# Tooling caches and local overrides
+/.phpcs-cache
+/phpcs.xml
+/.phpunit.result.cache
+/build/
+/dist/
+*.zip
+
+# Editors and operating systems
+/.idea/
+/.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+*~
+*.swp

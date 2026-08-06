@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<ruleset name="Simple Login for DocCheck">
+	<description>WordPress Coding Standards for the Simple Login for DocCheck plugin.</description>
+
+	<file>.</file>
+
+	<exclude-pattern>/vendor/</exclude-pattern>
+	<exclude-pattern>/node_modules/</exclude-pattern>
+
+	<arg value="sp"/>
+	<arg name="colors"/>
+	<arg name="extensions" value="php"/>
+	<arg name="parallel" value="8"/>
+	<arg name="basepath" value="."/>
+
+	<rule ref="WordPress">
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="simple_login_for_doccheck"/>
+				<element value="SIMPLE_LOGIN_FOR_DOCCHECK"/>
+				<element value="Simple_Login_For_DocCheck"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="simple-login-for-doccheck"/>
+			</property>
+		</properties>
+	</rule>
+
+	<config name="minimum_wp_version" value="6.3"/>
+
+	<config name="testVersion" value="8.0-"/>
+	<rule ref="PHPCompatibilityWP"/>
+</ruleset>

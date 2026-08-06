@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "dotsunited/simple-login-for-doccheck",
+	"version": "1.0.0",
+	"title": "DocCheck Login",
+	"category": "widgets",
+	"icon": "lock",
+	"description": "Displays the DocCheck login button for protected content.",
+	"keywords": [ "DocCheck", "login", "authentication" ],
+	"textdomain": "simple-login-for-doccheck",
+	"attributes": {
+		"size": {
+			"type": "string",
+			"default": ""
+		},
+		"language": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"editorScript": "simple-login-for-doccheck-block-editor",
+	"editorStyle": "simple-login-for-doccheck-block-editor"
+}

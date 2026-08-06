@@ -1,0 +1,8 @@
+.simple-login-for-doccheck-settings .notice.inline {
+	margin: 1em 0;
+}
+
+.simple-login-for-doccheck-settings__pages {
+	min-width: 25em;
+	max-width: 100%;
+}

@@ -1,0 +1,53 @@
+{
+	"name": "dotsunited/simple-login-for-doccheck",
+	"description": "WordPress plugin that protects selected pages behind a DocCheck login.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://github.com/dotsunited/simple-login-for-doccheck",
+	"authors": [
+		{
+			"name": "Dots United GmbH",
+			"homepage": "https://dotsunited.de/"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/dotsunited/simple-login-for-doccheck/issues",
+		"source": "https://github.com/dotsunited/simple-login-for-doccheck"
+	},
+	"require": {
+		"php": ">=8.0"
+	},
+	"autoload": {
+		"classmap": [
+			"admin/",
+			"includes/"
+		]
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+		"php-parallel-lint/php-parallel-lint": "^1.4",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+		"wp-coding-standards/wpcs": "^3.1"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		},
+		"sort-packages": true
+	},
+	"scripts": {
+		"lint": "parallel-lint --exclude vendor --exclude node_modules .",
+		"phpcs": "phpcs",
+		"phpcbf": "phpcbf",
+		"check": [
+			"@lint",
+			"@phpcs"
+		]
+	},
+	"scripts-descriptions": {
+		"lint": "Check all PHP files for syntax errors.",
+		"phpcs": "Check the code against the WordPress Coding Standards.",
+		"phpcbf": "Fix the coding standard violations that can be fixed automatically.",
+		"check": "Run the syntax check and the coding standards check."
+	}
+}

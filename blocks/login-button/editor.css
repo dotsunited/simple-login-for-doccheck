@@ -1,0 +1,32 @@
+.simple-login-for-doccheck-block-editor .components-placeholder__fieldset {
+	display: block;
+}
+
+.simple-login-for-doccheck-block-editor__preview {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 2.75rem;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	background: #cc0033;
+	color: #fff;
+	font-weight: 600;
+}
+
+.simple-login-for-doccheck-block-editor__preview--small {
+	max-width: 10rem;
+}
+
+.simple-login-for-doccheck-block-editor__preview--medium {
+	max-width: 14rem;
+}
+
+.simple-login-for-doccheck-block-editor__preview--large {
+	max-width: 18rem;
+	min-height: 3.25rem;
+}
+
+.simple-login-for-doccheck-block-editor__description {
+	margin: 0.75rem 0 0;
+}

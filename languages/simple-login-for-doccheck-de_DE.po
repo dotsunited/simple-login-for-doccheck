@@ -1,0 +1,352 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Login for DocCheck 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/simple-login-for-doccheck\n"
+"Last-Translator: Dots United GmbH <info@dotsunited.de>\n"
+"Language-Team: German (informal)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-06T13:18:33+00:00\n"
+"PO-Revision-Date: 2026-08-06 00:00+0000\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: simple-login-for-doccheck\n"
+
+#. Plugin Name of the plugin
+#: simple-login-for-doccheck.php
+#: admin/class-simple-login-for-doccheck-admin.php:79
+#: admin/class-simple-login-for-doccheck-admin.php:80
+msgid "Simple Login for DocCheck"
+msgstr "Simple Login for DocCheck"
+
+#. Plugin URI of the plugin
+#: simple-login-for-doccheck.php
+msgid "https://github.com/dotsunited/simple-login-for-doccheck"
+msgstr ""
+
+#. Description of the plugin
+#: simple-login-for-doccheck.php
+msgid "Protects selected pages with a DocCheck OAuth 2.0 login for verified medical professionals."
+msgstr "Schützt ausgewählte Seiten mit einem DocCheck-Login über OAuth 2.0 für verifizierte medizinische Fachkräfte."
+
+#. Author of the plugin
+#: simple-login-for-doccheck.php
+msgid "Dots United GmbH"
+msgstr ""
+
+#. Author URI of the plugin
+#: simple-login-for-doccheck.php
+msgid "https://dotsunited.de/"
+msgstr ""
+
+#: admin/class-simple-login-for-doccheck-admin.php:99
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: admin/class-simple-login-for-doccheck-admin.php:145
+msgid "DocCheck credentials"
+msgstr "DocCheck-Zugangsdaten"
+
+#: admin/class-simple-login-for-doccheck-admin.php:152
+msgid "Protected content"
+msgstr "Geschützte Inhalte"
+
+#: admin/class-simple-login-for-doccheck-admin.php:159
+msgid "Login button"
+msgstr "Login-Button"
+
+#: admin/class-simple-login-for-doccheck-admin.php:165
+msgid "Login client ID"
+msgstr "Login-Client-ID"
+
+#: admin/class-simple-login-for-doccheck-admin.php:166
+msgid "Login client secret"
+msgstr "Login-Client-Secret"
+
+#: admin/class-simple-login-for-doccheck-admin.php:167
+msgid "Redirect URI"
+msgstr "Redirect-URL"
+
+#: admin/class-simple-login-for-doccheck-admin.php:168
+msgid "Login page"
+msgstr "Login-Seite"
+
+#: admin/class-simple-login-for-doccheck-admin.php:169
+msgid "Protected pages"
+msgstr "Geschützte Seiten"
+
+#: admin/class-simple-login-for-doccheck-admin.php:170
+msgid "Login validity"
+msgstr "Gültigkeit der Anmeldung"
+
+#: admin/class-simple-login-for-doccheck-admin.php:171
+msgid "Button size"
+msgstr "Button-Größe"
+
+#: admin/class-simple-login-for-doccheck-admin.php:172
+msgid "Button language"
+msgstr "Button-Sprache"
+
+#: admin/class-simple-login-for-doccheck-admin.php:219
+msgid "Simple Login for DocCheck is not fully configured."
+msgstr "Simple Login for DocCheck ist nicht vollständig konfiguriert."
+
+#: admin/class-simple-login-for-doccheck-admin.php:223
+msgid "Visitors currently receive an error instead of your protected pages. Access stays blocked until the client ID, client secret, redirect URI and a published login page are all in place."
+msgstr "Besucher erhalten derzeit eine Fehlermeldung statt deiner geschützten Seiten. Der Zugriff bleibt gesperrt, bis Client-ID, Client-Secret, Redirect-URL und eine veröffentlichte Anmeldeseite vollständig hinterlegt sind."
+
+#: admin/class-simple-login-for-doccheck-admin.php:230
+msgid "Review the Simple Login for DocCheck settings"
+msgstr "DocCheck-Login-Einstellungen prüfen"
+
+#: admin/class-simple-login-for-doccheck-admin.php:241
+msgid "You are not allowed to manage these settings."
+msgstr "Du hast keine Berechtigung, diese Einstellungen zu verwalten."
+
+#: admin/class-simple-login-for-doccheck-admin.php:250
+msgid "Protected pages stay blocked until the client ID, client secret, redirect URI and a published login page are all configured. Visitors receive an error until then."
+msgstr "Geschützte Seiten bleiben gesperrt, bis Client-ID, Client-Secret, Redirect-URL und eine veröffentlichte Anmeldeseite vollständig konfiguriert sind. Bis dahin erhalten Besucher eine Fehlermeldung."
+
+#: admin/class-simple-login-for-doccheck-admin.php:277
+msgid "You receive these values from DocCheck when you order a LoginTarget. The redirect URI must match the value registered with DocCheck exactly."
+msgstr "Diese Werte erhältst du von DocCheck bei der Bestellung eines LoginTargets. Die Redirect-URL muss exakt mit der bei DocCheck hinterlegten Adresse übereinstimmen."
+
+#: admin/class-simple-login-for-doccheck-admin.php:328
+msgid "A secret is stored — leave empty to keep it"
+msgstr "Ein Secret ist gespeichert – leer lassen, um es beizubehalten"
+
+#: admin/class-simple-login-for-doccheck-admin.php:329
+msgid "Enter your client secret"
+msgstr "Client-Secret eintragen"
+
+#: admin/class-simple-login-for-doccheck-admin.php:335
+msgid "The stored secret is never displayed. Leave this field empty to keep the current value."
+msgstr "Das gespeicherte Secret wird nie angezeigt. Lass dieses Feld leer, um den aktuellen Wert beizubehalten."
+
+#: admin/class-simple-login-for-doccheck-admin.php:358
+msgid "Use a URL on this site's origin. HTTPS is required on production sites; HTTP is accepted only when the WordPress environment type is local, development or staging."
+msgstr "Verwende eine URL mit demselben Origin wie diese Website. Auf Produktions-Websites ist HTTPS erforderlich. HTTP wird nur akzeptiert, wenn der WordPress-Umgebungstyp local, development oder staging ist."
+
+#: admin/class-simple-login-for-doccheck-admin.php:377
+msgid "— Select —"
+msgstr "— Auswählen —"
+
+#: admin/class-simple-login-for-doccheck-admin.php:412
+msgid "No pages found."
+msgstr "Keine Seiten gefunden."
+
+#. translators: %d: page ID.
+#: admin/class-simple-login-for-doccheck-admin.php:427
+#, php-format
+msgid "(no title) #%d"
+msgstr "(ohne Titel) #%d"
+
+#: admin/class-simple-login-for-doccheck-admin.php:445
+msgid "Hold Ctrl (Cmd on macOS) to select several pages. WordPress administrators and editors always keep access."
+msgstr "Halte Strg (Cmd auf macOS) gedrückt, um mehrere Seiten auszuwählen. WordPress-Administratoren und -Redakteure behalten immer Zugriff."
+
+#: admin/class-simple-login-for-doccheck-admin.php:464
+msgid "minutes"
+msgstr "Minuten"
+
+#: admin/class-simple-login-for-doccheck-admin.php:469
+msgid "How long a DocCheck login remains valid. The login always ends when the browser session ends."
+msgstr "Wie lange eine DocCheck-Anmeldung gültig bleibt. Die Anmeldung endet in jedem Fall mit dem Ende der Browser-Sitzung."
+
+#: admin/class-simple-login-for-doccheck-admin.php:484
+#: blocks/login-button/index.js:14
+msgid "Small"
+msgstr "Klein"
+
+#: admin/class-simple-login-for-doccheck-admin.php:485
+#: blocks/login-button/index.js:15
+msgid "Medium"
+msgstr "Mittel"
+
+#: admin/class-simple-login-for-doccheck-admin.php:486
+#: blocks/login-button/index.js:16
+msgid "Large"
+msgstr "Groß"
+
+#: admin/class-simple-login-for-doccheck-admin.php:501
+msgid "Automatic (site language)"
+msgstr "Automatisch (Sprache der Website)"
+
+#. translators: %s: language the button currently falls back to, e.g. EN.
+#: admin/class-simple-login-for-doccheck-admin.php:512
+#, php-format
+msgid "Automatic follows the site language and falls back to %s when DocCheck does not offer it."
+msgstr "Automatisch folgt der Sprache der Website und weicht auf %s aus, wenn DocCheck diese Sprache nicht anbietet."
+
+#: includes/class-simple-login-for-doccheck-auth.php:133
+msgid "The DocCheck login session could not be secured."
+msgstr "Die DocCheck-Anmeldesitzung konnte nicht abgesichert werden."
+
+#: includes/class-simple-login-for-doccheck-button.php:241
+msgid "Simple Login for DocCheck is not configured yet. Add your client ID, client secret and redirect URI in Settings → Simple Login for DocCheck."
+msgstr "Simple Login for DocCheck ist noch nicht konfiguriert. Bitte trage Client-ID, Client-Secret und Redirect-URL unter Einstellungen → Simple Login for DocCheck ein."
+
+#: includes/class-simple-login-for-doccheck-button.php:295
+msgid "The login failed. Please try again."
+msgstr "Die Anmeldung ist fehlgeschlagen. Bitte versuche es erneut."
+
+#: includes/class-simple-login-for-doccheck-client.php:60
+msgid "The Simple Login for DocCheck settings are incomplete."
+msgstr "Die Einstellungen für Simple Login for DocCheck sind unvollständig."
+
+#. translators: %d: HTTP status code.
+#: includes/class-simple-login-for-doccheck-client.php:93
+#, php-format
+msgid "DocCheck returned an unexpected HTTP status (%d)."
+msgstr "DocCheck hat einen unerwarteten HTTP-Status zurückgegeben (%d)."
+
+#: includes/class-simple-login-for-doccheck-client.php:105
+msgid "The response from DocCheck could not be decoded."
+msgstr "Die Antwort von DocCheck konnte nicht ausgelesen werden."
+
+#: includes/class-simple-login-for-doccheck-client.php:112
+msgid "DocCheck rejected the login."
+msgstr "DocCheck hat die Anmeldung abgelehnt."
+
+#: includes/class-simple-login-for-doccheck-client.php:119
+msgid "DocCheck did not return an access token."
+msgstr "DocCheck hat kein Access-Token zurückgegeben."
+
+#: includes/class-simple-login-for-doccheck-protection.php:145
+msgid "This content requires a DocCheck login, which is currently unavailable. Please try again later."
+msgstr "Für diesen Inhalt ist eine DocCheck-Anmeldung erforderlich, die zurzeit nicht verfügbar ist. Bitte versuche es später erneut."
+
+#: includes/class-simple-login-for-doccheck-protection.php:146
+msgid "DocCheck login unavailable"
+msgstr "DocCheck-Anmeldung nicht verfügbar"
+
+#: includes/class-simple-login-for-doccheck-protection.php:346
+msgid "DocCheck login is required to access this content."
+msgstr "Für den Zugriff auf diesen Inhalt ist eine DocCheck-Anmeldung erforderlich."
+
+#: includes/class-simple-login-for-doccheck-settings.php:531
+msgid "The redirect URI must be an absolute URL on this site's origin and use HTTPS on production sites."
+msgstr "Die Redirect-URI muss eine absolute URL mit demselben Origin wie diese Website sein und auf Produktions-Websites HTTPS verwenden."
+
+#. translators: 1: required PHP version, 2: current PHP version.
+#: simple-login-for-doccheck.php:49
+#, php-format
+msgid "Simple Login for DocCheck requires PHP %1$s or higher. This site runs PHP %2$s, so the plugin has been deactivated."
+msgstr "Simple Login for DocCheck benötigt PHP %1$s oder höher. Auf dieser Website läuft PHP %2$s, daher wurde das Plugin deaktiviert."
+
+#: admin/class-simple-login-for-doccheck-admin.php:218
+msgid "The DocCheck login page is missing its login block."
+msgstr "Auf der DocCheck-Anmeldeseite fehlt der Login-Block."
+
+#: admin/class-simple-login-for-doccheck-admin.php:222
+#: admin/class-simple-login-for-doccheck-admin.php:254
+msgid "The selected login page does not contain the DocCheck Login block or the [simple_login_for_doccheck] shortcode alternative. Visitors cannot start the login flow until one is added."
+msgstr "Die ausgewählte Anmeldeseite enthält weder den Block „DocCheck Login“ noch die Shortcode-Alternative [simple_login_for_doccheck]. Besucher können die Anmeldung erst starten, nachdem eine der beiden Optionen hinzugefügt wurde."
+
+#: admin/class-simple-login-for-doccheck-admin.php:289
+msgid "Add the DocCheck Login block to your login page, then choose the pages that require a login. The [simple_login_for_doccheck] shortcode is available as an alternative."
+msgstr "Füge den Block „DocCheck Login“ zu deiner Anmeldeseite hinzu und wähle dann die Seiten aus, die eine Anmeldung erfordern. Der Shortcode [simple_login_for_doccheck] steht als Alternative zur Verfügung."
+
+#: admin/class-simple-login-for-doccheck-admin.php:385
+msgid "Visitors are redirected here when they request protected content. This published page must contain the DocCheck Login block or, alternatively, the [simple_login_for_doccheck] shortcode."
+msgstr "Besucher werden hierhin weitergeleitet, wenn sie geschützte Inhalte aufrufen. Diese veröffentlichte Seite muss den Block „DocCheck Login“ oder alternativ den Shortcode [simple_login_for_doccheck] enthalten."
+
+#: blocks/login-button/index.js:13
+#: blocks/login-button/index.js:20
+msgid "Use plugin setting"
+msgstr "Plugin-Einstellung verwenden"
+
+#: blocks/login-button/index.js:21
+msgid "Automatic"
+msgstr "Automatisch"
+
+#: blocks/login-button/index.js:22
+msgid "German"
+msgstr "Deutsch"
+
+#: blocks/login-button/index.js:23
+msgid "English"
+msgstr "Englisch"
+
+#: blocks/login-button/index.js:24
+msgid "French"
+msgstr "Französisch"
+
+#: blocks/login-button/index.js:25
+msgid "Spanish"
+msgstr "Spanisch"
+
+#: blocks/login-button/index.js:26
+msgid "Italian"
+msgstr "Italienisch"
+
+#: blocks/login-button/index.js:27
+msgid "Dutch"
+msgstr "Niederländisch"
+
+#: blocks/login-button/index.js:46
+msgid "Button settings"
+msgstr "Button-Einstellungen"
+
+#: blocks/login-button/index.js:50
+msgid "Size"
+msgstr "Größe"
+
+#: blocks/login-button/index.js:58
+msgid "Language"
+msgstr "Sprache"
+
+#: blocks/login-button/index.js:74
+#: blocks/login-button/index.js:100
+msgid "DocCheck Login"
+msgstr "DocCheck Login"
+
+#: blocks/login-button/index.js:83
+msgid "DocCheck login button"
+msgstr "DocCheck-Login-Button"
+
+#: blocks/login-button/index.js:88
+msgid "The real login button is rendered on the published page."
+msgstr "Der tatsächliche Login-Button wird auf der veröffentlichten Seite dargestellt."
+
+#: blocks/login-button/index.js:103
+msgid "Displays the DocCheck login button for protected content."
+msgstr "Zeigt den DocCheck-Login-Button für geschützte Inhalte an."
+
+#: blocks/login-button/index.js:109
+msgid "login"
+msgstr "Anmeldung"
+
+#: blocks/login-button/index.js:110
+msgid "authentication"
+msgstr "Authentifizierung"
+
+#: blocks/login-button/block.json
+msgctxt "block title"
+msgid "DocCheck Login"
+msgstr "DocCheck Login"
+
+#: blocks/login-button/block.json
+msgctxt "block description"
+msgid "Displays the DocCheck login button for protected content."
+msgstr "Zeigt den DocCheck-Login-Button für geschützte Inhalte an."
+
+#: blocks/login-button/block.json
+msgctxt "block keyword"
+msgid "DocCheck"
+msgstr "DocCheck"
+
+#: blocks/login-button/block.json
+msgctxt "block keyword"
+msgid "login"
+msgstr "Anmeldung"
+
+#: blocks/login-button/block.json
+msgctxt "block keyword"
+msgid "authentication"
+msgstr "Authentifizierung"
+
+#: simple-login-for-doccheck.php:88
+msgid "Simple Login for DocCheck could not load its Composer autoloader. Run composer install or install an official release archive."
+msgstr "Simple Login for DocCheck konnte seinen Composer-Autoloader nicht laden. Führe composer install aus oder installiere ein offizielles Release-Archiv."
