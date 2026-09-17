@@ -25,7 +25,7 @@ For development, clone this repository into `wp-content/plugins/` and run `compo
 
 ## Setup
 
-1. Create an **OAuth 2.0 / OpenID Connect** LoginTarget in the [DocCheck Login Manager](https://login.doccheck.com/).
+1. Create an **OAuth 2.0 / OpenID Connect** LoginTarget in [DocCheck Access](https://access.doccheck.com/).
 2. Create a WordPress page, add the **DocCheck Login** block, and publish it.
 3. Open **Settings → Simple Login for DocCheck** and configure:
 
