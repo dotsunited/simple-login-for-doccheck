@@ -1,6 +1,6 @@
 # Simple Login for DocCheck
 
-WordPress plugin that protects selected content with a [DocCheck](https://www.doccheck.com/) OAuth 2.0 login.
+WordPress plugin that protects selected content with a [DocCheck](https://www.doccheck.com/) OAuth 2.0 login, setup via the new [DocCheck Access](https://access.doccheck.com/) platform.
 
 [![Lint](https://github.com/dotsunited/simple-login-for-doccheck/actions/workflows/lint.yml/badge.svg)](https://github.com/dotsunited/simple-login-for-doccheck/actions/workflows/lint.yml)
 [![License: GPL v2+](https://img.shields.io/badge/License-GPLv2%2B-blue.svg)](LICENSE)
