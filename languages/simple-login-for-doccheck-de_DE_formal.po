@@ -57,15 +57,15 @@ msgid "Login button"
 msgstr "Login-Button"
 
 #: admin/class-simple-login-for-doccheck-admin.php:165
-msgid "Login client ID"
+msgid "Login-Client ID"
 msgstr "Login-Client-ID"
 
 #: admin/class-simple-login-for-doccheck-admin.php:166
-msgid "Login client secret"
+msgid "Login-Client Secret"
 msgstr "Login-Client-Secret"
 
 #: admin/class-simple-login-for-doccheck-admin.php:167
-msgid "Redirect URI"
+msgid "Redirect URL"
 msgstr "Redirect-URL"
 
 #: admin/class-simple-login-for-doccheck-admin.php:168
@@ -93,7 +93,7 @@ msgid "Simple Login for DocCheck is not fully configured."
 msgstr "Simple Login for DocCheck ist nicht vollständig konfiguriert."
 
 #: admin/class-simple-login-for-doccheck-admin.php:223
-msgid "Visitors currently receive an error instead of your protected pages. Access stays blocked until the client ID, client secret, redirect URI and a published login page are all in place."
+msgid "Visitors currently receive an error instead of your protected pages. Access stays blocked until the client ID, client secret, redirect URL and a published login page are all in place."
 msgstr "Besucher erhalten derzeit eine Fehlermeldung statt Ihrer geschützten Seiten. Der Zugriff bleibt gesperrt, bis Client-ID, Client-Secret, Redirect-URL und eine veröffentlichte Anmeldeseite vollständig hinterlegt sind."
 
 #: admin/class-simple-login-for-doccheck-admin.php:230
@@ -105,12 +105,12 @@ msgid "You are not allowed to manage these settings."
 msgstr "Sie haben keine Berechtigung, diese Einstellungen zu verwalten."
 
 #: admin/class-simple-login-for-doccheck-admin.php:250
-msgid "Protected pages stay blocked until the client ID, client secret, redirect URI and a published login page are all configured. Visitors receive an error until then."
+msgid "Protected pages stay blocked until the client ID, client secret, redirect URL and a published login page are all configured. Visitors receive an error until then."
 msgstr "Geschützte Seiten bleiben gesperrt, bis Client-ID, Client-Secret, Redirect-URL und eine veröffentlichte Anmeldeseite vollständig konfiguriert sind. Bis dahin erhalten Besucher eine Fehlermeldung."
 
 #: admin/class-simple-login-for-doccheck-admin.php:277
-msgid "You receive these values from DocCheck when you order a LoginTarget. The redirect URI must match the value registered with DocCheck exactly."
-msgstr "Diese Werte erhalten Sie von DocCheck bei der Bestellung eines LoginTargets. Die Redirect-URL muss exakt mit der bei DocCheck hinterlegten Adresse übereinstimmen."
+msgid "You can get these values from <a href=\"https://access.doccheck.com/\" target=\"_blank\">DocCheck Access</a> by creating a new Login-Client. The Redirect-URL must match the value provided by DocCheck Access."
+msgstr "Diese Werte erhalten Sie über <a href=\"https://access.doccheck.com/\" target=\"_blank\">DocCheck Access</a> durch das Erstellen eines neuen Login-Clients. Die Redirect-URL muss mit dem von DocCheck Access bereitgestellten Wert übereinstimmen."
 
 #: admin/class-simple-login-for-doccheck-admin.php:328
 msgid "A secret is stored — leave empty to keep it"
@@ -184,7 +184,7 @@ msgid "The DocCheck login session could not be secured."
 msgstr "Die DocCheck-Anmeldesitzung konnte nicht abgesichert werden."
 
 #: includes/class-simple-login-for-doccheck-button.php:241
-msgid "Simple Login for DocCheck is not configured yet. Add your client ID, client secret and redirect URI in Settings → Simple Login for DocCheck."
+msgid "Simple Login for DocCheck is not configured yet. Add your client ID, client secret and redirect URL in Settings → Simple Login for DocCheck."
 msgstr "Simple Login for DocCheck ist noch nicht konfiguriert. Bitte tragen Sie Client-ID, Client-Secret und Redirect-URL unter Einstellungen → Simple Login for DocCheck ein."
 
 #: includes/class-simple-login-for-doccheck-button.php:295
@@ -226,8 +226,8 @@ msgid "DocCheck login is required to access this content."
 msgstr "Für den Zugriff auf diesen Inhalt ist eine DocCheck-Anmeldung erforderlich."
 
 #: includes/class-simple-login-for-doccheck-settings.php:531
-msgid "The redirect URI must be an absolute URL on this site's origin and use HTTPS on production sites."
-msgstr "Die Redirect-URI muss eine absolute URL mit demselben Origin wie diese Website sein und auf Produktions-Websites HTTPS verwenden."
+msgid "The redirect URL must be an absolute URL on this site's origin and use HTTPS on production sites."
+msgstr "Die Redirect-URL muss eine absolute URL mit demselben Origin wie diese Website sein und auf Produktions-Websites HTTPS verwenden."
 
 #. translators: 1: required PHP version, 2: current PHP version.
 #: simple-login-for-doccheck.php:49

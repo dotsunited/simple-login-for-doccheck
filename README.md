@@ -11,7 +11,7 @@ WordPress plugin that protects selected content with a [DocCheck](https://www.do
 |---|---|
 | WordPress | 6.3+ |
 | PHP | 8.0+ with sessions enabled and a writable `session.save_path` |
-| DocCheck | LoginTarget with client ID and secret |
+| DocCheck | Login-Client with client ID and secret |
 
 ## Installation
 
@@ -25,7 +25,7 @@ For development, clone this repository into `wp-content/plugins/` and run `compo
 
 ## Setup
 
-1. Create an **OAuth 2.0 / OpenID Connect** LoginTarget in [DocCheck Access](https://access.doccheck.com/).
+1. Create an **OAuth 2.0 / OpenID Connect** Login-Client in [DocCheck Access](https://access.doccheck.com/).
 2. Create a WordPress page, add the **DocCheck Login** block, and publish it.
 3. Open **Settings → Simple Login for DocCheck** and configure:
 
@@ -33,15 +33,15 @@ For development, clone this repository into `wp-content/plugins/` and run `compo
 
 | Setting | Purpose |
 |---|---|
-| Login client ID / secret | Credentials from DocCheck. An empty secret field keeps the stored value. |
-| Redirect URI | Exact callback URL registered with DocCheck on the same origin as the WordPress home URL. HTTPS is required in production. |
+| Login-Client ID / secret | Credentials from DocCheck. An empty secret field keeps the stored value. |
+| Redirect URL | Exact callback URL registered with DocCheck on the same origin as the WordPress home URL. HTTPS is required in production. |
 | Login page | Published page containing the DocCheck Login block or shortcode alternative. |
 | Protected pages | Pages requiring a DocCheck login. |
 | Login validity | Session lifetime in minutes; default `60`. |
 | Button size | `small`, `medium`, or `large`. |
 | Button language | `auto`, `de`, `en`, `fr`, `es`, `it`, or `nl`. |
 
-Protected pages return `503` until the credentials, redirect URI, and login page are valid. WordPress administrators and editors retain access.
+Protected pages return `503` until the credentials, redirect URL, and login page are valid. WordPress administrators and editors retain access.
 
 ## Usage
 
@@ -71,7 +71,7 @@ Full-object `WP_Query` or `get_posts()` calls with `suppress_filters` enabled om
 
 ## Plan support and security
 
-DocCheck Basic, Economy, and Business LoginTargets are supported. The plugin only verifies a successful login; access tokens, personal data, and plan-specific identity data are not stored.
+DocCheck Basic, Economy, and Business Login-Clients are supported. The plugin only verifies a successful login; access tokens, personal data, and plan-specific identity data are not stored.
 
 DocCheck Basic does not return OAuth `state`, so the plugin neither sends nor verifies it. The server-to-server authorization-code exchange verifies the login. Without `state`, another site can cause a visitor's browser to complete a login it did not initiate; this only gives that visitor access to protected content. Use a different integration if your threat model requires a `state`-bound flow.
 
@@ -80,7 +80,7 @@ DocCheck Basic does not return OAuth `state`, so the plugin neither sends nor ve
 This plugin relies on DocCheck as an external authentication service:
 
 - **DocCheck CDN** (`https://dccdn.de`): When a page containing the DocCheck Login block or `[simple_login_for_doccheck]` shortcode is rendered, the visitor's browser loads the DocCheck login-button web component from the CDN. This request may transmit technical data such as the visitor's IP address, user agent, and referrer to DocCheck before the button is clicked.
-- **DocCheck OAuth service** (`https://auth.doccheck.com`): When a visitor starts the login flow, the visitor's browser connects to DocCheck for authentication. On the callback, the WordPress server sends the authorization code, client ID, client secret, and configured redirect URI to DocCheck's token endpoint to verify the login.
+- **DocCheck OAuth service** (`https://auth.doccheck.com`): When a visitor starts the login flow, the visitor's browser connects to DocCheck for authentication. On the callback, the WordPress server sends the authorization code, client ID, client secret, and configured redirect URL to DocCheck's token endpoint to verify the login.
 
 The plugin discards the returned access token and does not request or store DocCheck profile data. It stores only the local login expiry and return URL in the visitor's PHP session.
 

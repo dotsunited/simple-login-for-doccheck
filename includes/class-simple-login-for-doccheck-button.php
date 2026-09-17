@@ -238,7 +238,7 @@ if ( ! class_exists( 'Simple_Login_For_DocCheck_Button' ) ) {
 				if ( current_user_can( 'manage_options' ) ) {
 					return sprintf(
 						'<p class="simple-login-for-doccheck__notice">%s</p>',
-						esc_html__( 'Simple Login for DocCheck is not configured yet. Add your client ID, client secret and redirect URI in Settings → Simple Login for DocCheck.', 'simple-login-for-doccheck' )
+						esc_html__( 'Simple Login for DocCheck is not configured yet. Add your client ID, client secret and redirect URL in Settings → Simple Login for DocCheck.', 'simple-login-for-doccheck' )
 					);
 				}
 

@@ -148,7 +148,7 @@ if ( ! class_exists( 'Simple_Login_For_DocCheck_Settings' ) ) {
 		}
 
 		/**
-		 * Returns the configured OAuth redirect URI.
+		 * Returns the configured OAuth redirect URL.
 		 *
 		 * @since 1.0.0
 		 *
@@ -161,7 +161,7 @@ if ( ! class_exists( 'Simple_Login_For_DocCheck_Settings' ) ) {
 		}
 
 		/**
-		 * Whether client ID, secret and redirect URI are all present.
+		 * Whether client ID, secret and redirect URL are all present.
 		 *
 		 * @since 1.0.0
 		 *
@@ -421,7 +421,7 @@ if ( ! class_exists( 'Simple_Login_For_DocCheck_Settings' ) ) {
 		}
 
 		/**
-		 * Whether a redirect URI is an allowed URL on this site's origin.
+		 * Whether a redirect URL is an allowed URL on this site's origin.
 		 *
 		 * Production sites require HTTPS. Non-production environments may use HTTP
 		 * to support local development and testing. Fragments and user information
@@ -429,7 +429,7 @@ if ( ! class_exists( 'Simple_Login_For_DocCheck_Settings' ) ) {
 		 *
 		 * @since 1.0.0
 		 *
-		 * @param string $redirect_uri Redirect URI.
+		 * @param string $redirect_uri Redirect URL.
 		 * @return bool
 		 */
 		private static function is_allowed_redirect_uri( $redirect_uri ) {
@@ -528,7 +528,7 @@ if ( ! class_exists( 'Simple_Login_For_DocCheck_Settings' ) ) {
 				add_settings_error(
 					self::OPTION_NAME,
 					'simple_login_for_doccheck_redirect_uri_invalid',
-					__( 'The redirect URI must be an absolute URL on this site\'s origin and use HTTPS on production sites.', 'simple-login-for-doccheck' ),
+					__( 'The redirect URL must be an absolute URL on this site\'s origin and use HTTPS on production sites.', 'simple-login-for-doccheck' ),
 					'error'
 				);
 

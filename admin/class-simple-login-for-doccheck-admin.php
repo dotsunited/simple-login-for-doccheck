@@ -162,9 +162,9 @@ if ( ! class_exists( 'Simple_Login_For_DocCheck_Admin' ) ) {
 			);
 
 			$fields = array(
-				array( 'login_client_id', __( 'Login client ID', 'simple-login-for-doccheck' ), 'render_text_field', 'simple_login_for_doccheck_credentials' ),
-				array( 'login_client_secret', __( 'Login client secret', 'simple-login-for-doccheck' ), 'render_secret_field', 'simple_login_for_doccheck_credentials' ),
-				array( 'redirect_uri', __( 'Redirect URI', 'simple-login-for-doccheck' ), 'render_url_field', 'simple_login_for_doccheck_credentials' ),
+				array( 'login_client_id', __( 'Login-Client ID', 'simple-login-for-doccheck' ), 'render_text_field', 'simple_login_for_doccheck_credentials' ),
+				array( 'login_client_secret', __( 'Login-Client Secret', 'simple-login-for-doccheck' ), 'render_secret_field', 'simple_login_for_doccheck_credentials' ),
+				array( 'redirect_uri', __( 'Redirect URL', 'simple-login-for-doccheck' ), 'render_url_field', 'simple_login_for_doccheck_credentials' ),
 				array( 'login_page_id', __( 'Login page', 'simple-login-for-doccheck' ), 'render_login_page_field', 'simple_login_for_doccheck_pages' ),
 				array( 'protected_pages', __( 'Protected pages', 'simple-login-for-doccheck' ), 'render_protected_pages_field', 'simple_login_for_doccheck_pages' ),
 				array( 'session_lifetime', __( 'Login validity', 'simple-login-for-doccheck' ), 'render_lifetime_field', 'simple_login_for_doccheck_pages' ),
@@ -220,7 +220,7 @@ if ( ! class_exists( 'Simple_Login_For_DocCheck_Admin' ) ) {
 
 			$message = $missing_login_method
 				? __( 'The selected login page does not contain the DocCheck Login block or the [simple_login_for_doccheck] shortcode alternative. Visitors cannot start the login flow until one is added.', 'simple-login-for-doccheck' )
-				: __( 'Visitors currently receive an error instead of your protected pages. Access stays blocked until the client ID, client secret, redirect URI and a published login page are all in place.', 'simple-login-for-doccheck' );
+				: __( 'Visitors currently receive an error instead of your protected pages. Access stays blocked until the client ID, client secret, redirect URL and a published login page are all in place.', 'simple-login-for-doccheck' );
 
 			printf(
 				'<div class="notice notice-error"><p><strong>%1$s</strong> %2$s</p><p><a href="%3$s">%4$s</a></p></div>',
@@ -247,7 +247,7 @@ if ( ! class_exists( 'Simple_Login_For_DocCheck_Admin' ) ) {
 
 				<?php if ( ! $this->settings->is_ready() ) : ?>
 					<div class="notice notice-warning inline">
-						<p><?php esc_html_e( 'Protected pages stay blocked until the client ID, client secret, redirect URI and a published login page are all configured. Visitors receive an error until then.', 'simple-login-for-doccheck' ); ?></p>
+						<p><?php esc_html_e( 'Protected pages stay blocked until the client ID, client secret, redirect URL and a published login page are all configured. Visitors receive an error until then.', 'simple-login-for-doccheck' ); ?></p>
 					</div>
 				<?php elseif ( ! $this->settings->login_page_has_login_method() ) : ?>
 					<div class="notice notice-warning inline">
@@ -274,7 +274,7 @@ if ( ! class_exists( 'Simple_Login_For_DocCheck_Admin' ) ) {
 		public function render_credentials_intro() {
 			printf(
 				'<p>%s</p>',
-				esc_html__( 'You receive these values from DocCheck when you order a LoginTarget. The redirect URI must match the value registered with DocCheck exactly.', 'simple-login-for-doccheck' )
+				wp_kses_post( __( 'You can get these values from <a href="https://access.doccheck.com/" target="_blank">DocCheck Access</a> by creating a new Login-Client. The Redirect-URL must match the value provided by DocCheck Access.', 'simple-login-for-doccheck' ) )
 			);
 		}
 
@@ -337,7 +337,7 @@ if ( ! class_exists( 'Simple_Login_For_DocCheck_Admin' ) ) {
 		}
 
 		/**
-		 * Renders the redirect URI field.
+		 * Renders the redirect URL field.
 		 *
 		 * @since 1.0.0
 		 *

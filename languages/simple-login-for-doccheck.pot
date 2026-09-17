@@ -58,15 +58,15 @@ msgid "Login button"
 msgstr ""
 
 #: admin/class-simple-login-for-doccheck-admin.php:165
-msgid "Login client ID"
+msgid "Login-Client ID"
 msgstr ""
 
 #: admin/class-simple-login-for-doccheck-admin.php:166
-msgid "Login client secret"
+msgid "Login-Client Secret"
 msgstr ""
 
 #: admin/class-simple-login-for-doccheck-admin.php:167
-msgid "Redirect URI"
+msgid "Redirect URL"
 msgstr ""
 
 #: admin/class-simple-login-for-doccheck-admin.php:168
@@ -103,7 +103,7 @@ msgid "The selected login page does not contain the DocCheck Login block or the 
 msgstr ""
 
 #: admin/class-simple-login-for-doccheck-admin.php:223
-msgid "Visitors currently receive an error instead of your protected pages. Access stays blocked until the client ID, client secret, redirect URI and a published login page are all in place."
+msgid "Visitors currently receive an error instead of your protected pages. Access stays blocked until the client ID, client secret, redirect URL and a published login page are all in place."
 msgstr ""
 
 #: admin/class-simple-login-for-doccheck-admin.php:230
@@ -115,11 +115,11 @@ msgid "You are not allowed to manage these settings."
 msgstr ""
 
 #: admin/class-simple-login-for-doccheck-admin.php:250
-msgid "Protected pages stay blocked until the client ID, client secret, redirect URI and a published login page are all configured. Visitors receive an error until then."
+msgid "Protected pages stay blocked until the client ID, client secret, redirect URL and a published login page are all configured. Visitors receive an error until then."
 msgstr ""
 
 #: admin/class-simple-login-for-doccheck-admin.php:277
-msgid "You receive these values from DocCheck when you order a LoginTarget. The redirect URI must match the value registered with DocCheck exactly."
+msgid "You can get these values from <a href=\"https://access.doccheck.com/\" target=\"_blank\">DocCheck Access</a> by creating a new Login-Client. The Redirect-URL must match the value provided by DocCheck Access."
 msgstr ""
 
 #: admin/class-simple-login-for-doccheck-admin.php:289
@@ -202,7 +202,7 @@ msgid "The DocCheck login session could not be secured."
 msgstr ""
 
 #: includes/class-simple-login-for-doccheck-button.php:241
-msgid "Simple Login for DocCheck is not configured yet. Add your client ID, client secret and redirect URI in Settings → Simple Login for DocCheck."
+msgid "Simple Login for DocCheck is not configured yet. Add your client ID, client secret and redirect URL in Settings → Simple Login for DocCheck."
 msgstr ""
 
 #: includes/class-simple-login-for-doccheck-button.php:295
@@ -244,7 +244,7 @@ msgid "DocCheck login is required to access this content."
 msgstr ""
 
 #: includes/class-simple-login-for-doccheck-settings.php:531
-msgid "The redirect URI must be an absolute URL on this site's origin and use HTTPS on production sites."
+msgid "The redirect URL must be an absolute URL on this site's origin and use HTTPS on production sites."
 msgstr ""
 
 #. translators: 1: required PHP version, 2: current PHP version.

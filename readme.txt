@@ -30,7 +30,7 @@ WordPress administrators and editors retain access to protected pages. Other vis
 This plugin relies on DocCheck as an external authentication service.
 
 * **DocCheck CDN (`https://dccdn.de`)** — When a page containing the DocCheck Login block or `[simple_login_for_doccheck]` shortcode is rendered, the visitor's browser loads the DocCheck login-button web component from the CDN. This request may transmit technical data such as the visitor's IP address, user agent, and referrer to DocCheck before the button is clicked.
-* **DocCheck OAuth service (`https://auth.doccheck.com`)** — When a visitor starts the login flow, the visitor's browser connects to DocCheck for authentication. On the callback, the WordPress server sends the authorization code, client ID, client secret, and configured redirect URI to DocCheck's token endpoint to verify the login.
+* **DocCheck OAuth service (`https://auth.doccheck.com`)** — When a visitor starts the login flow, the visitor's browser connects to DocCheck for authentication. On the callback, the WordPress server sends the authorization code, client ID, client secret, and configured redirect URL to DocCheck's token endpoint to verify the login.
 
 The plugin discards the returned access token and does not request or store DocCheck profile data. It stores only the local login expiry and return URL in the visitor's PHP session.
 
@@ -52,7 +52,7 @@ Without `state`, another site can cause a visitor's browser to complete a login 
 2. Activate **Simple Login for DocCheck**.
 3. Create a WordPress page, add the **DocCheck Login** block, and publish it. The `[simple_login_for_doccheck]` shortcode remains available as an alternative.
 4. Open **Settings > Simple Login for DocCheck**.
-5. Enter the DocCheck Login Client ID, client secret, and same-origin redirect URI.
+5. Enter the DocCheck Login-Client ID, client secret, and same-origin redirect URL.
 6. Select the login page and the pages to protect.
 7. Exclude the protected pages and login page from full-page caching.
 
@@ -66,9 +66,9 @@ No. A successful DocCheck login creates only a temporary PHP session for access 
 
 No. The access token is discarded immediately after the authorization-code exchange, and no DocCheck profile endpoint is called.
 
-= Why must the redirect URI use the WordPress site's origin? =
+= Why must the redirect URL use the WordPress site's origin? =
 
-The callback is handled by this WordPress installation. Requiring the same scheme, hostname, and port prevents a configuration that sends the authorization response somewhere the plugin cannot process it. Production redirect URIs must use HTTPS.
+The callback is handled by this WordPress installation. Requiring the same scheme, hostname, and port prevents a configuration that sends the authorization response somewhere the plugin cannot process it. Production redirect URLs must use HTTPS.
 
 = Can WordPress administrators and editors access protected pages? =
 

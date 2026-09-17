@@ -143,7 +143,7 @@ if ( ! class_exists( 'Simple_Login_For_DocCheck_Auth' ) ) {
 		}
 
 		/**
-		 * Whether the current request is the configured OAuth redirect URI.
+		 * Whether the current request is the configured OAuth redirect URL.
 		 *
 		 * @since 1.0.0
 		 *
