@@ -4,7 +4,7 @@
  * Plugin URI:        https://github.com/dotsunited/simple-login-for-doccheck
  * Update URI:        false
  * Description:       Protects selected pages with a DocCheck OAuth 2.0 login for verified medical professionals.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 6.3
  * Requires PHP:      8.0
  * Author:            Dots United GmbH
@@ -25,7 +25,7 @@ if ( defined( 'SIMPLE_LOGIN_FOR_DOCCHECK_VERSION' ) ) {
 	return;
 }
 
-define( 'SIMPLE_LOGIN_FOR_DOCCHECK_VERSION', '1.0.0' );
+define( 'SIMPLE_LOGIN_FOR_DOCCHECK_VERSION', '1.0.1' );
 define( 'SIMPLE_LOGIN_FOR_DOCCHECK_FILE', __FILE__ );
 define( 'SIMPLE_LOGIN_FOR_DOCCHECK_DIR', plugin_dir_path( __FILE__ ) );
 define( 'SIMPLE_LOGIN_FOR_DOCCHECK_URL', plugin_dir_url( __FILE__ ) );

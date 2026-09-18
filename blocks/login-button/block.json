@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
 	"name": "dotsunited/simple-login-for-doccheck",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"title": "DocCheck Login",
 	"category": "widgets",
 	"icon": "lock",
